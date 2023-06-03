@@ -61,7 +61,7 @@ app.use("/posts", postRoutes);
 /* MONGOOSE SETUP */
 const myPORT = 8080;
 const myMONGODB_URI = 'mongodb+srv://vercel-admin-user:vercel123@cluster0.arzmqd1.mongodb.net/';
-const PORT = myPORT || process.env.PORT || 6001;
+const PORT = process.env.PORT || 6001;
 mongoose
   .connect(myMONGODB_URI || process.env.MONGODB_URI, {
     useNewUrlParser: true,
