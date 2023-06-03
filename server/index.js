@@ -59,7 +59,7 @@ app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
 
 /* MONGOOSE SETUP */
-const myPORT = 3001;
+const myPORT = 8080;
 const myMONGODB_URI = 'mongodb+srv://vercel-admin-user:vercel123@cluster0.arzmqd1.mongodb.net/';
 const PORT = myPORT || process.env.PORT || 6001;
 mongoose
